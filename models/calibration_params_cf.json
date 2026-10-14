@@ -1,0 +1,15 @@
+{
+    "temperature": 0.7866733074188232,
+    "model": "DINOv2-Small (ViT-S/14)",
+    "dataset": "cf_small",
+    "fitted_on": "validation",
+    "n_calibration_samples": 200,
+    "classes": [
+        "ai_edited",
+        "authentic"
+    ],
+    "class_to_idx": {
+        "ai_edited": 0,
+        "authentic": 1
+    }
+}

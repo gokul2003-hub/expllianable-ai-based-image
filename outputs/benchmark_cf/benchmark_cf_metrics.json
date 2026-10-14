@@ -1,0 +1,60 @@
+{
+  "dataset": "cf_small",
+  "split": "test",
+  "n_test": 400,
+  "classes": [
+    "ai_edited",
+    "authentic"
+  ],
+  "class_to_idx": {
+    "ai_edited": 0,
+    "authentic": 1
+  },
+  "classification": {
+    "accuracy": 0.985,
+    "macro_precision": 0.9851940776310524,
+    "macro_recall": 0.985,
+    "macro_f1": 0.984998499849985,
+    "roc_auc": 0.9994,
+    "confusion_matrix": [
+      [
+        199,
+        1
+      ],
+      [
+        5,
+        195
+      ]
+    ],
+    "per_class": {
+      "ai_edited": {
+        "precision": 0.9754901960784313,
+        "recall": 0.995,
+        "f1": 0.9851485148514851,
+        "support": 200
+      },
+      "authentic": {
+        "precision": 0.9948979591836735,
+        "recall": 0.975,
+        "f1": 0.9848484848484849,
+        "support": 200
+      }
+    }
+  },
+  "calibration": {
+    "temperature": 0.7866733074188232,
+    "ece": 0.04730202108621597,
+    "nll": 0.06730341166257858,
+    "brier": 0.02790364809334278,
+    "mean_entropy": 0.22922379384054373
+  },
+  "ood": {
+    "status": "SKIPPED \u2014 ood_params_cf.json not found"
+  },
+  "tta": {
+    "single_crop_accuracy": 0.985,
+    "tta_accuracy": 0.985,
+    "agreement_rate": 0.995,
+    "n_disagreements": 2
+  }
+}
